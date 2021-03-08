@@ -43,7 +43,6 @@ cardInfo = (id) => {
 //closing card info
 closeCardInfo = () => {
     showCard = false
-    
     card.style.visibility = "hidden"
 }
 
