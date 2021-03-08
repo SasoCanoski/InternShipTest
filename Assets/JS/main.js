@@ -25,7 +25,7 @@ postArr.forEach((el, i) => {
 cardInfo = (id) => {
     let filteredElement = postArr.filter(el => el.id == id)
     let temperature = celsius ? filteredElement[0].temp + 273.15 : filteredElement[0].temp
-    
+
     showCard = true
 
     card.style.visibility = "visible"
@@ -43,6 +43,7 @@ cardInfo = (id) => {
 //closing card info
 closeCardInfo = () => {
     showCard = false
+    
     card.style.visibility = "hidden"
 }
 
