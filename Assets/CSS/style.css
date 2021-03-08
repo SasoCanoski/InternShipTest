@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.cardWeather {
+  border: 1px solid black;
+  background-color: blue;
+  color: black;
+  width: 13%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mainDiv {
+  background-image: url("../Images/weather-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#dayInfo {
+  background-color: blue;
+  border: 1px solid black;
+  max-width: 50%;
+  min-height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  visibility: hidden;
+  position: relative;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3%;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+}
+
+#topMeny {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#topMeny h1 {
+  margin-bottom: 30px;
+}
+
+.north-east {
+  transform: rotate(60deg);
+}
+
+.north-west {
+  transform: rotate(-60deg);
+}
+
+.south-east {
+  transform: rotate(130deg);
+}
+
+.south-west {
+  transform: rotate(230deg);
+}
+
+#convert {
+  border: navajowhite;
+  outline: none;
+  background-color: blue;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardWeather {
+    font-size: 9px;
+  }
+}
